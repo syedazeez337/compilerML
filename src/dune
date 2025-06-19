@@ -1,0 +1,12 @@
+(library
+ (name lisp)
+ (wrapped false)
+ (public_name lisp)
+ (modules token lexer)
+)
+
+(test
+ (name lexer_test)
+ (modules lexer_test)
+ (libraries lisp ounit2)
+)
