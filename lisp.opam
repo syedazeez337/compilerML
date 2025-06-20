@@ -1,0 +1,7 @@
+opam-version: "2.0"
+name: "lisp"
+version: "0.1"
+authors: "Auto"
+maintainer: "auto@example.com"
+synopsis: "Educational Lisp interpreter"
+depends: [ "ocaml" "dune" "ounit2" ]
