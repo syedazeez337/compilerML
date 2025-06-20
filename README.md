@@ -2,7 +2,6 @@
 
 This project guides you through building a small Lisp interpreter from scratch in OCaml. The repository is organized as a teaching tool: each component of the interpreter is introduced incrementally with clear, well-documented code and accompanying tests.
 
-At the moment the interpreter contains only the **lexer** which turns raw input into a sequence of tokens. Future commits will add a parser, evaluator, and a REPL.
 
 ## Prerequisites
 
@@ -28,13 +27,13 @@ Run the automated tests:
 dune runtest --display=short
 ```
 
-All current tests exercise the lexer.
+
 
 ## Project Layout
 
 - `src/token.ml`, `src/token.mli` – definitions of the token types produced by the lexer.
 - `src/lexer.ml`, `src/lexer.mli` – the tokenizer implementation.
-- `src/lexer_test.ml` – unit tests for the lexer using OUnit2.
+
 - `dune-project`, `lisp.opam` – build configuration files.
 
 ## Using the Lexer
@@ -52,12 +51,13 @@ Then tokenize an expression:
 - : Token.t list = [LParen; Symbol "+"; Number 1.; Number 2.; RParen]
 ```
 
+
 ## Roadmap
 
 The goal of the project is to arrive at a working Lisp interpreter supporting variables, functions, and a simple REPL. The steps will roughly be:
 
 1. **Tokenizer** – completed.
-2. **Parser** – build an AST from the tokens.
+
 3. **Evaluator** – evaluate expressions in an environment.
 4. **REPL** – interactive read–eval–print loop.
 

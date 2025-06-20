@@ -2,7 +2,7 @@
  (name lisp)
  (wrapped false)
  (public_name lisp)
- (modules token lexer)
+
 )
 
 (test
@@ -10,3 +10,4 @@
  (modules lexer_test)
  (libraries lisp ounit2)
 )
+
